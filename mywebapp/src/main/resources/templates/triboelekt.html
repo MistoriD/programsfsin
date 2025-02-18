@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Трибоэлектрические</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Трибоэлектрические</h1>
+        <ul class="list-group">
+            <li class="list-group-item" th:each="link : ${subLinks}" th:text="${link}"></li>
+        </ul>
+        <a href="/" class="btn btn-secondary">Back to Main</a>
+    </div>
+</body>
+</html>
